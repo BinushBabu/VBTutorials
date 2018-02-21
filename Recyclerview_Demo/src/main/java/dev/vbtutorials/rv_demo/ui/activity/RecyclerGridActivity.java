@@ -22,7 +22,7 @@ public class RecyclerGridActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
-        recyclerView =  findViewById(R.id.rv_list);
+        recyclerView = (RecyclerView) findViewById(R.id.rv_list);
         setUpAdapter();
 
     }
