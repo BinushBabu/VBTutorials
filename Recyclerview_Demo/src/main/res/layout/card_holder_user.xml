@@ -34,7 +34,7 @@
         android:layout_height="80dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:background="@color/colorAccent"
+        android:background="#1b8905"
         android:gravity="center"
         android:padding="2dp"
         android:text="12"
