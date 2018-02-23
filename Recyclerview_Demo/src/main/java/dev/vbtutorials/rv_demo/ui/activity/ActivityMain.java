@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import dev.vbtutorials.rv_demo.R;
 
 public class ActivityMain extends AppCompatActivity implements View.OnClickListener {
@@ -17,10 +19,10 @@ public class ActivityMain extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //find views by id
-        bt_list =  findViewById(R.id.bt_list);
-        bt_grid =  findViewById(R.id.bt_grid);
-        bt_recycler_with_card =  findViewById(R.id.bt_recycler_with_card);
-        bt_recycler_with_staggered_grid=  findViewById(R.id.bt_recycler_with_staggered_grid);
+        bt_list = (Button) findViewById(R.id.bt_list);
+        bt_grid = (Button) findViewById(R.id.bt_grid);
+        bt_recycler_with_card = (Button) findViewById(R.id.bt_recycler_with_card);
+        bt_recycler_with_staggered_grid= (Button) findViewById(R.id.bt_recycler_with_staggered_grid);
 
         ////////////////////setup listener
         bt_list.setOnClickListener(this);
@@ -56,5 +58,6 @@ public class ActivityMain extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Toast.makeText(this,"Back",Toast.LENGTH_LONG).show();
     }
 }
