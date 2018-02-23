@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import dev.vbtutorials.rv_demo.R;
 
 public class ActivityMain extends AppCompatActivity implements View.OnClickListener {
@@ -57,6 +59,7 @@ public class ActivityMain extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Toast.makeText(this,"Back",Toast.LENGTH_LONG).show();
     }
 
 }

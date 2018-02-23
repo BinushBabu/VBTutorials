@@ -24,7 +24,6 @@ public class RecyclerGridActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recycler);
         recyclerView =  findViewById(R.id.rv_list);
         setUpAdapter();
-
     }
 
 
