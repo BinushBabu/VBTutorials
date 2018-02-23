@@ -65,7 +65,7 @@ public class RecyclerListActivity extends AppCompatActivity {
         userList.add(new User(11, "Binush", "b.android@gmail.com"));
         userList.add(new User(12, "Anti Rubin", "ar.android@gmail.com"));
         userList.add(new User(13, "James Gosling", "jg.android@gmail.com"));
-
+        userList.add(new User(14, "Nithin", "n.android@gmail.com"));
 
         return userList;
     }
